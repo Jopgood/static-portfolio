@@ -1,0 +1,97 @@
+body {
+    font-family: "Inter", system-ui;
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-weight: 600;
+}
+
+h2 {
+    font-weight: 600;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+/* Header */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation-items {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 0px;
+}
+
+.navigation-items li:not(:last-child) {
+    margin-right: 15px;
+}
+
+.navigation-items a {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation-items a:hover {
+    text-decoration: underline;
+}
+
+/* Main */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+/* about me */
+.about-me-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.about-me img {
+    object-fit: cover;
+}
+
+/* projects */
+summary {
+    list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
+    margin-bottom: 5px;
+}
+
+.project-title h3 {
+    display: inline;
+    cursor: pointer;
+}
+
+/* skills */
+.skills-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.skills-list i:not(:last-child) {
+    margin-right: 15px;
+}
