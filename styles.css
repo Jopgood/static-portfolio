@@ -95,3 +95,14 @@ summary {
 .skills-list i:not(:last-child) {
     margin-right: 15px;
 }
+
+/* contact */
+.contact-list {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+
+.contact-list i:not(:last-child) {
+    margin-right: 10px;
+}
