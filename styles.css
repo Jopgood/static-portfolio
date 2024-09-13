@@ -10,6 +10,10 @@ body {
     margin: 0 auto;
 }
 
+main {
+    margin-bottom: 30px;
+}
+
 h1 {
     font-weight: 600;
 }
@@ -28,6 +32,11 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+nav a {
+    white-space: nowrap;
 }
 
 .logo a {
@@ -68,10 +77,14 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .about-me img {
     object-fit: cover;
+    max-width: 100%;
+    height: auto;
 }
 
 /* projects */
@@ -105,4 +118,11 @@ summary {
 
 .contact-list i:not(:last-child) {
     margin-right: 10px;
+}
+
+/* responsive styling */
+@media screen and (max-width: 768px) {
+    .about-me-container {
+        flex-direction: column-reverse;
+    }
 }
