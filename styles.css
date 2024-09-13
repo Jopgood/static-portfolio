@@ -8,6 +8,7 @@ body {
     flex-direction: column;
     padding: 0 16px;
     margin: 0 auto;
+    background-color: #ffff;
 }
 
 main {
@@ -39,6 +40,10 @@ nav a {
     white-space: nowrap;
 }
 
+nav button {
+    text-decoration: none;
+}
+
 .logo a {
     text-decoration: none;
     color: black;
@@ -59,6 +64,7 @@ nav a {
 .navigation-items a {
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 .navigation-items a:hover {
@@ -88,9 +94,9 @@ main {
 }
 
 /* projects */
-summary {
-    list-style-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/right-arrow.svg);
-    margin-bottom: 5px;
+.projects ul {
+    list-style: none;
+    padding-left: 0px;
 }
 
 .project-title h3 {
@@ -126,3 +132,17 @@ summary {
         flex-direction: column-reverse;
     }
 }
+
+/* dark mode styling */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffff;
+}
+
+body.dark-mode .logo a, body.dark-mode .navigation-items a, body.dark-mode summary {
+    color: #ffff;
+}
+
+body.dark-mode summary {
+    filter: invert(1) brightness(2);
+  }
